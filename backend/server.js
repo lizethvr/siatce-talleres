@@ -18,7 +18,7 @@ app.use(express.json());
 // Conexión a MongoDB
 connectDB();
 
-// Rutas de ejemplo
+// Rutas
 app.get("/", (req, res) => {
   res.send("¡API de Talleres en funcionamiento!");
 });
