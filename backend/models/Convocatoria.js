@@ -26,4 +26,4 @@ const convocatoriaSchema = new mongoose.Schema({
 
 const Convocatoria = mongoose.model('Convocatoria', convocatoriaSchema);
 
-export default Convocatoria;
+module.exports =  Convocatoria;

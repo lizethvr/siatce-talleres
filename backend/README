@@ -1,0 +1,11 @@
+npm i 
+instala modulos
+
+npm run dev
+corre server
+
+ctrl + c 
+detiene server
+
+npm start "en backend" 
+corre script de server.js
