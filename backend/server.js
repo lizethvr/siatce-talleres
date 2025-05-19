@@ -7,6 +7,7 @@ const userRoutes = require('./routes/user.routes')
 const ayudaRoute = require('./routes/ayuda.route')
 const convocatoriaRoute = require('./routes/convocatoria.routes')
 const talleresRoutes = require('./routes/taller.routes')
+const notificacionRoute = require('./routes/notificacion.routes')
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.use('/api/users', userRoutes);{}
 app.use('/api/ayuda', ayudaRoute);
 app.use('/api/convocatorias', convocatoriaRoute)
 app.use('/api/talleres', talleresRoutes);
+app.use('/api/notificacion', notificacionRoute)
 
 // Puerto de escucha
 const PORT = process.env.PORT || 5000;
