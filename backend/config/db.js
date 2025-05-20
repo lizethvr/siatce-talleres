@@ -1,15 +1,14 @@
-const moongose = require('mongoose')
+const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 
-dotenv.config(); // Variables de entorno del .ENV
-
+dotenv.config(); 
 const connectDB = async () => {
   try {
-    // const conn = await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/talleres', { 
-    //   useNewUrlParser: true,
-    //   useUnifiedTopology: true,
-    // });
-    // console.log(`MongoDB conectado: ${conn.connection.host}`);
+    const conn = await mongoose.connect(process.env.MONGODB_URI, { 
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log(`MongoDB conectado: ${conn.connection.host}`);
     console.log('All gud');
     
   } catch (error) {
